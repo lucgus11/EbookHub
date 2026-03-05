@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Send Djazz</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        .box { border: 2px dashed #ccc; padding: 20px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Envoyer un fichier</h1>
+    <div class="box">
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Envoyer</button>
+        <p id="uploadStatus"></p>
+    </div>
+
+    <h1>Récupérer un fichier</h1>
+    <div class="box">
+        <input type="text" id="fileCode" placeholder="Code (ex: A7B2)">
+        <button onclick="downloadFile()">Télécharger</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
